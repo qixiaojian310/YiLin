@@ -1,0 +1,17 @@
+#toggle-btn2 {
+    display: none;
+}
+
+body {
+    overflow: scroll;
+}
+
+.study-set-head {
+    width: 100%;
+}
+.btn-toolbar{
+    background: rgb(204, 203, 203);
+}
+.btn-toolbar:hover{
+    background: rgb(180, 180, 180);
+}

@@ -1,0 +1,29 @@
+﻿Ministry\ of\ Foreign\ Affairs 外交部
+Ministry\ of\ National\ Defence 国防部
+State\ Development\ Planning\ Commission 国家发展计划委员会
+State\ Economy\ and\ Trade\ Commission 国家经济计划委员会
+Ministry\ of\ Education 教育部
+Ministry\ of\ Science\ and\ Technology 科学技术部
+Commission\ of\ Science,\ Technology\ and\ Industry\ for\ National\ Defence 国防科学技术工业委员会
+State\ Ethnic\ Affairs\ Commission 国家民族事务委员会
+Ministry\ of\ Public\ Security 公安部
+Ministry\ of\ State\ Security 国家安全部
+Ministry\ of\ Supervision 监察部
+Ministry\ of\ Civil\ Affairs 民政部
+Ministry\ of\ Justice 司法部
+Ministry\ of\ Finance 财政部
+Ministry\ of\ Personnel 人事部
+Ministry\ of\ Labour\ and\ Social\ Security 劳动和社会保障部
+Ministry\ of\ Land and\ Resources 国土资源部
+Ministry\ of\ Construction 建设部
+Ministry\ of\ Railways 铁道部
+Ministry\ of\ Communications 交通部
+Ministry\ of\ Information\ Industry 信息产业部
+Ministry\ of\ Water\ Resources 水利部
+Ministry\ of\ Agricultry 农业部
+Ministry\ of\ Foreign\ Trade\ and\ Economic\ Cooperation 对外贸易经济合作部
+Ministry\ of\ Culture 文化部
+Ministry\ of\ Health 卫生部
+State\ Family\ Planning\ Commission 国家计划生育委员会
+The\ People's\ Bank\ of\ China 中国人民银行
+National\ Auditing\ Administration 审计署

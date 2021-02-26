@@ -1,0 +1,6 @@
+#Last time refreshed at:
+#Mon Feb 24 22:48:55 CST 2020
+loss=丢失
+refrain=节制
+respect=尊重
+soft=软的

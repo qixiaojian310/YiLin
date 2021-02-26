@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        usercenter
+    </title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/create-study-set.css">
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- 该页面的顶端部分 -->
+        <div class="study-set-head">
+            <header style="position: sticky; top: 0px; z-index: 2;">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light head-bar">
+                    <a class="navbar-brand head-bar-items" href="studyset.html">KillWord Master StudySet Manager</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- 单词集头部的设计 -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav d-flex align-items-lg-center align-items-start pr-5" style="margin-left: auto;">
+                            <li><a class="btn btn-toolbar m-2 ml-0 ml-lg-5" type="button">Upload study set</a></li>
+                            <li><a class="btn btn-toolbar m-2 ml-0 ml-lg-5" type="button">Save the draft</a></li>
+                            <li>
+                                <form class="d-flex ml-0 ml-lg-5 align-items-center">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <input class="btn btn-success my-2 ml-3 my-sm-0" type="submit" value="Search in content">
+                                </form>
+                            </li>
+                            <!-- 用户的头像 -->
+                            <li>
+                                <div class="login-head">
+                                    <a class="login-head" href="#">
+                                        <img src="picture/head1.jpg" class="login-head"
+                                            style="width:100%; height:100%;">
+                                    </a>
+                                    <!-- 用户功能栏 TODO -->
+                                    <div class="dropdown-content">
+                                        <p>abc</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-12">
+                        <form class="form-horizontal row d-flex align-items-center" role="form">
+                            <div class="col-9 mt-5 ml-5 p-3 create-study-set-head">
+                                <div class="my-3">
+                                    <div class="form-group row">
+                                        <label for="inputTitle"
+                                            class="col-sm-2 study-set-form-head control-label">Title</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control study-set-info-input"
+                                                placeholder="请输入您的笔记标题" id="inputTitle" />
+                                        </div>
+                                    </div>
+                                    <div class="input-border"></div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="form-group row">
+                                        <label for="inputdescript"
+                                            class="col-sm-2 control-label study-set-form-head">description</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control study-set-info-input"
+                                                placeholder="请简要描述您的笔记" id="inputdescript" />
+                                        </div>
+                                    </div>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <button type="submit" class="px-5 py-2 btn btn-info"
+                                        style="float: right; font-size: x-large; font-weight: 600;">Upload</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 单词卡片 -->
+        <div class="study-set-show-area2">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-12">
+                        <div class="col-12 mt-4 row d-flex justify-content-center flex-wrap">
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <div class="col-3 p-0 m-3 set-rotate-trigger">
+                                <div
+                                    class="usercenter-study-set-alone text-center justify-content-center align-items-center">
+                                    <p class="usercenter-study-set-alone-title">abc</p>
+                                    <p class="usercenter-study-set-alone-content">
+                                        abcdefg
+                                    </p>
+                                </div>
+                                <div class="usercenter-study-set-alone-translate text-center">
+                                    dcg
+                                </div>
+                            </div>
+                            <!-- 添加单词卡片 -->
+                            <div class="col-3 p-0 m-3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 转换器 -->
+        <a class="btn study-set-toggle1 d-flex align-items-center justify-content-center">
+            <i id="toggle-btn1" class="fa fa-4x fa-arrow-circle-right"></i>
+            <i id="toggle-btn2" class="fa fa-4x fa-arrow-circle-left"></i>
+        </a>
+        <!-- 初始化部分 富文本编辑器 -->
+        <div class="study-set-show-area1">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-12">
+
+                        <div class="m-5">
+                            <!-- 富文本编辑器位置 -->
+                            <div id="editor" class="col-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/swiper-bundle.js"></script>
+<script type="text/javascript" src="js/wangEditor.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- <script type="text/javascript" src="js/usercenter.js"></script> -->
+<!-- <script type="text/javascript" src="js/studyset.js"></script> -->
+<script type="text/javascript" src="js/createstudyset.js"></script>
+
+</html>

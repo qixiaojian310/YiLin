@@ -1,0 +1,8 @@
+.homepage-background{
+    background: url("../picture/background1.jpg") no-repeat;
+    background-size: 120% 120%;
+    position: fixed;
+    /* left: -10%; */
+    width: 100%;
+    height: 120%;
+}

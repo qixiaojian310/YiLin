@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+    <div id="backDivBtn">
+        <table align="center">
+            <tr align="center">
+                <td colspan="3">
+                    <div style="overflow:hidden;width:100%;display:inline;">
+                        <a href="javascript:void(0);" id="backBtn">
+                            <div class="btn return">返回</div>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var yy = $(this).scrollTop(); //获得滚动条top值
+                if ($(this).scrollTop() < 30) {
+                    $("#backDivBtn").css({
+                        "position": "absolute",
+                        top: "30px",
+                        left: "90%"
+                    }); //设置div层定位，要绝对定位
+                } else {
+                    $("#backDivBtn").css({
+                        "position": "absolute",
+                        top: yy + "px",
+                        left: "90%"
+                    });
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

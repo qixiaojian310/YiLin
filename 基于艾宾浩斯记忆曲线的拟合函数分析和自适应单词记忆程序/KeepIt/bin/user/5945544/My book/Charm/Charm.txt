@@ -1,0 +1,7 @@
+#Last time refreshed at:
+#Mon Feb 24 22:50:51 CST 2020
+hi=你好
+commercial=广告的
+subsist=维持
+curb=控制
+bye=再见
