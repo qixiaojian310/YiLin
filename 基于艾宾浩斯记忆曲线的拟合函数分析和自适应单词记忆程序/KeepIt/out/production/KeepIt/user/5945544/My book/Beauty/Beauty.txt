@@ -1,3 +1,0 @@
-#Last time refreshed at:
-#Tue Feb 25 16:41:26 CST 2020
-faculty=教职工

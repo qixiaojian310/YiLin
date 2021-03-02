@@ -7,7 +7,23 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function getChildren(children) {
+function processChildren(c) {
+  var slides = [];
+
+  _react.default.Children.toArray(c).forEach(function (child) {
+    if (child.type && child.type.displayName === 'SwiperSlide') {
+      slides.push(child);
+    } else if (child.props && child.props.children) {
+      processChildren(child.props.children).forEach(function (slide) {
+        return slides.push(slide);
+      });
+    }
+  });
+
+  return slides;
+}
+
+function getChildren(c) {
   var slides = [];
   var slots = {
     'container-start': [],
@@ -16,24 +32,26 @@ function getChildren(children) {
     'wrapper-end': []
   };
 
-  function processChildren(c) {
-    _react.default.Children.toArray(c).forEach(function (child) {
-      if (child.type === _react.default.Fragment && child.props.children) {
-        processChildren(child.props.children);
-        return;
-      }
+  _react.default.Children.toArray(c).forEach(function (child) {
+    if (child.type && child.type.displayName === 'SwiperSlide') {
+      slides.push(child);
+    } else if (child.props && child.props.slot && slots[child.props.slot]) {
+      slots[child.props.slot].push(child);
+    } else if (child.props && child.props.children) {
+      var foundSlides = processChildren(child.props.children);
 
-      if (child.type && child.type.displayName === 'SwiperSlide') {
-        slides.push(child);
-      } else if (child.props && child.props.slot && slots[child.props.slot]) {
-        slots[child.props.slot].push(child);
+      if (foundSlides.length > 0) {
+        foundSlides.forEach(function (slide) {
+          return slides.push(slide);
+        });
       } else {
         slots['container-end'].push(child);
       }
-    });
-  }
+    } else {
+      slots['container-end'].push(child);
+    }
+  });
 
-  processChildren(children);
   return {
     slides: slides,
     slots: slots

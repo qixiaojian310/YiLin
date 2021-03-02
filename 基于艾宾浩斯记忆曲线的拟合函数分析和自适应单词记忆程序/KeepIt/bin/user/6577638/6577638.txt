@@ -1,5 +1,0 @@
-ID: 6577638
-Name: Donald Trump
-Gender: male
-Birthday: 1946.6.14
-About me: I am the 45th president of United States of America!

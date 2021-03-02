@@ -1,5 +1,0 @@
-ID: 7776152
-Name: lalal
-Gender: Unknown
-Birthday: Unknown
-About me: lalala

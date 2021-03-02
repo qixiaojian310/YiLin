@@ -1,4 +1,0 @@
-#Last time refreshed at:
-#Mon Feb 24 22:11:27 CST 2020
-1=Lucky
-2=Tom

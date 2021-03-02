@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        search
+    </title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+
+</head>
+
+<body>
+    <header style="position: sticky; top: 0px; z-index: 2;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light head-bar">
+            <a class="navbar-brand head-bar-items" href="homepage.html">KillWord Master</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-head-item active">
+                        <a class="nav-link head-bar-items" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-head-item">
+                        <a class="nav-link head-bar-items" href="#">About</a>
+                    </li>
+                    <li class="nav-item nav-head-item dropdown">
+                        <a class="nav-link head-bar-items dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Category
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Literature</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">More</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-head-item">
+                        <a class="nav-link head-bar-items login" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 mr-5">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="login-head">
+                    <a class="login-head" href="#">
+                        <img src="picture/head1.jpg" class="login-head" style="width:100%; height:100%;">
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>abc</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mask">
+    </div>
+
+
+    <div id="login-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center"
+                    style="height: 100px; width: 100%; background: rgb(50, 57, 146);">
+                    <p class="col-12 p-4 text-left mask-title">
+                        Login
+                    </p>
+                </div>
+                <div class="col-10 offset-1">
+                    <div class="login-link mt-3 d-flex align-items-center">
+                        <a href="#" class="col-12" style="text-decoration: none;">
+                            <p class="login-link text-right">用GOOGLE账户登录</p>
+                        </a>
+                    </div>
+                    <div class="login-link mt-3 d-flex align-items-center">
+                        <a href="#" class="col-12" style="text-decoration: none;">
+                            <p class="login-link text-right">用GOOGLE账户登录</p>
+                        </a>
+                    </div>
+                    <div class="login-link mt-3 mb-4 d-flex align-items-center">
+                        <a href="#" class="col-12" style="text-decoration: none;">
+                            <p class="login-link text-right">用GOOGLE账户登录</p>
+                        </a>
+                    </div>
+                </div>
+                <form action="#" method="POST" class="col-12">
+                    <div class="d-flex flex-column align-items-stretch justify-content-around">
+                        <div class="col-12 p-3" id="login-username">
+                            <input type="text" class="login-uesr-input" placeholder="username" name="username"
+                                width="100%" height="20%">
+                            <div class="input-border"></div>
+                            <p style="font-size: large; font-weight: 500; color:rgb(92, 92, 92);">Username</p>
+                        </div>
+                        <div class="col-12 p-3" id="login-password">
+                            <input type="password" class="login-uesr-input" placeholder="password" name="password"
+                                height="20px">
+                            <div class="input-border"></div>
+                            <p style="font-size: large; font-weight: 500; color:rgb(92, 92, 92);">password</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" value="submit" class="btn-homepage2 btn-block pb-2 pt-2">
+                        </div>
+                        <div class="d-flex justify-content-center pt-4">
+                            <input type="button" value="Sign up" class="btn-homepage3 btn-block pb-2 pt-2" id="sign-up">
+                        </div>
+                        <div class="d-flex justify-content-center pt-4 pb-4">
+                            <input type="button" value="close" class="btn-homepage1 btn-block pb-2 pt-2"
+                                id="login-close">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sign-up-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center"
+                    style="height: 100px; width: 100%; background: rgb(50, 57, 146);">
+                    <p class="col-12 p-4 text-left mask-title">
+                        Sign up
+                    </p>
+                </div>
+                <div class="col-10 offset-1">
+                    <div class="login-link mt-3 d-flex align-items-center">
+                        <a href="#" class="col-12" style="text-decoration: none;">
+                            <p class="login-link text-right">用GOOGLE账户注册</p>
+                        </a>
+                    </div>
+                    <div class="login-link mt-3 d-flex align-items-center">
+                        <a href="#" class="col-12" style="text-decoration: none;">
+                            <p class="login-link text-right">用GOOGLE账户注册</p>
+                        </a>
+                    </div>
+                    <div class="login-link mt-3 mb-4 d-flex align-items-center">
+                        <a href="#" class="col-12" style="text-decoration: none;">
+                            <p class="login-link text-right">用GOOGLE账户注册</p>
+                        </a>
+                    </div>
+                </div>
+                <form action="#" method="POST" class="col-12">
+                    <p class="col-12" style="font-size: large; font-weight: 500; color:rgb(92, 92, 92);">生日：
+                        <input type="text" id="datepicker" size="30">
+                    </p>
+                    <div class="d-flex flex-column align-items-stretch justify-content-around">
+                        <div class="col-12 p-3" id="login-username">
+                            <input type="text" class="login-uesr-input" placeholder="username" name="username"
+                                width="100%" height="20%">
+                            <div class="input-border"></div>
+                            <p style="font-size: large; font-weight: 500; color:rgb(92, 92, 92);">Username</p>
+                        </div>
+                        <div class="col-12 p-3" id="login-password">
+                            <input type="password" class="login-uesr-input" placeholder="password" name="password"
+                                height="20px">
+                            <div class="input-border"></div>
+                            <p style="font-size: large; font-weight: 500; color:rgb(92, 92, 92);">password</p>
+                        </div>
+                        <p class="col-12 checkbox-text"
+                            style="font-size: large; font-weight: 500; color:rgb(92, 92, 92);">
+                            <input type="checkbox" id="legancy-signup" value="agree" class="checkbox">
+                            <label for="legancy-signup" style="width: 100%;">
+                                Are you agree the legancy of KillWord
+                            </label>
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" value="submit" class="btn-homepage2 btn-block pb-2 pt-2">
+                        </div>
+                        <div class="d-flex justify-content-center pt-4">
+                            <input type="button" value="login" class="login btn-homepage3 btn-block pb-2 pt-2">
+                        </div>
+                        <div class="d-flex justify-content-center pt-4 pb-4">
+                            <input type="button" value="close" class="btn-homepage1 btn-block pb-2 pt-2"
+                                id="signup-close">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-12 m-0 p-3 pl-5 usercenter-sidebar">
+                <form role="form">
+                    <div class="form-group search-filter">
+                        <label for="name">其他关键字</label>
+                        <input type="text" class="form-control" id="name" placeholder="请输入关键字">
+                    </div>
+                    <p>
+                        <label for="amount">字数范围：</label>
+                        <input type="text" class="form-control" id="amount" style="color:#4e1bac; font-weight:bold;">
+                    </p>
+                    <div id="slider-range" class="my-2"></div>
+                    <div class="search-filter-border mb-2"></div>
+                    <p class="search-filter-title">类别</p>
+                    <div class="radio">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked> 选项 1
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2"> 选项 2
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="radio" name="optionsRadios1" id="optionsRadios3" value="option3"> 选项 3
+                        </label>
+                    </div>
+                    <div class="search-filter-border mb-2"></div>
+                    <p class="search-filter-title">价格</p>
+                    <div class="radio">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked> 选项 1
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2"> 选项 2
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="radio" name="optionsRadios2" id="optionsRadios3" value="option3"> 选项 3
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="radio" name="optionsRadios2" id="optionsRadios3" value="option4"> 选项 4
+                        </label>
+                    </div>
+                    <div class="search-filter-border mb-2"></div>
+                    <p class="search-filter-title">价格</p>
+                    <div class="checkbox">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="checkbox" name="optionsRadios3" id="optionsRadios1" value="option1" checked> 选项 1
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="checkbox" name="optionsRadios3" id="optionsRadios2" value="option2"> 选项 2
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="checkbox" name="optionsRadios3" id="optionsRadios3" value="option3"> 选项 3
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="checkbox" name="optionsRadios3" id="optionsRadios4" value="option4"> 选项 4
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="search-filter" style="font-size: 14px;">
+                            <input type="checkbox" name="optionsRadios3" id="optionsRadios5" value="option5"> 选项 5
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-9 col-12 offset-lg-1 mt-5">
+                <!-- <div class="col-12"> -->
+                <div class="search-result-title">ABC</div>
+                <!-- </div> -->
+                <div class="col-10 offset-1 p-3 my-4">
+                    <div class="col-10 offset-1 text-center search-result-study-set">
+                        <p class="search-result-study-set-title">TITLE</p>
+                        <div class="row d-flex justify-content-center align-content-around" style="height: 70%;">
+                            <div class="col-10 row px-0 d-flex justify-content-center align-content-center"
+                                style="height: 100%;">
+                                <div class="col-5 col-lg-3 mr-2 search-result-study-set-content-alone text-center">
+                                    chapter1
+                                </div>
+                                <div class="chapter2 col-5 col-lg-3 mx-2 search-result-study-set-content-alone text-center">
+                                    chapter2
+                                </div>
+                                <div class="col-3 d-lg-block d-none ml-2 search-result-study-set-content-alone text-center">
+                                    chapter3
+                                </div>
+                            </div>
+                            <!-- 省略号 -->
+                            <div class="col-2 d-flex px-0 row align-content-center">
+                                <div class="col-4 pl-0">
+                                    <div class="ellipsis d-none d-lg-block"></div>
+                                </div>
+                                <div class="col-4 pl-0">
+                                    <div class="ellipsis d-none d-md-block"></div>
+                                </div>
+                                <div class="col-4 pl-0">
+                                    <div class="ellipsis d-none d-md-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/swiper-bundle.js"></script>
+<script type="text/javascript" defer="true" src="js/main.js"></script>
+<script type="text/javascript" defer="true" src="js/usercenter.js"></script>
+<script type="text/javascript" defer="true" src="js/searchcontent.js"></script>
+
+</html>
